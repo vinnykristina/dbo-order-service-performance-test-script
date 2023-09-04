@@ -32,13 +32,13 @@ export default async function () {
 
     const credentials = `${username}:${password}`;
 
-    group('Update DO Detail by ID', function () {
-        const UpdateDoDetailById = http.request('PUT', 'https://moonlay-api.dbo.dev/order-srv/delivery-orders/${id}/details', JSON.stringify(data), {
+    group('Update DO Detail by DO ID', function () {
+        const UpdateDoDetailByDoId = http.request('PUT', 'https://moonlay-api.dbo.dev/order-srv/delivery-orders/${id}/details', JSON.stringify(data), {
             headers: {
                 'Content-Type': 'application/json',
                 'Authorization': `Basic ${credentials}`,
             },
         })
-        console.log('Update DO Detail by ID', UpdateDoDetailById)
+        console.log('Update DO Detail by Do ID', UpdateDoDetailByDoId)
     });
 }

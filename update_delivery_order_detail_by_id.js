@@ -38,6 +38,6 @@ export default async function () {
                 'Authorization': `Basic ${credentials}`,
             },
         })
-        console.log('Update DO Detailby ID', UpdateDoDetailById)
+        console.log('Update DO Detail by ID', UpdateDoDetailById)
     });
 }
