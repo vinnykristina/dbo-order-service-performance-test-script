@@ -20,6 +20,10 @@ export const options = {
 
 export default async function () {
 
+
+    const date = new Date();
+    console.log('ini tanggal' ,date);
+    
     const credentials = `${username}:${password}`;
     const encodedCredentials =  encoding.b64encode(credentials);
 
@@ -31,7 +35,7 @@ export default async function () {
         "visitation_id": "1",
         "salesman_id": "525",
         "order_source_id": "1",
-        "so_date": "ini data dinamis",
+        "so_date": "${faker}",
         "so_ref_code": "ini data dinamis",
         "so_ref_date": "ini data dinamis",
         "total_amount": "10000000",
