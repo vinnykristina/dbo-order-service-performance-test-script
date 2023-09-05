@@ -21,8 +21,8 @@ export const options = {
 export default async function () {
 
 
-    const date = new Date();
-    console.log('ini tanggal' ,date);
+    let currentDate = new Date().toJSON().slice(0, 10);
+    console.log('ini tanggal' ,currentDate);
     
     const credentials = `${username}:${password}`;
     const encodedCredentials =  encoding.b64encode(credentials);
